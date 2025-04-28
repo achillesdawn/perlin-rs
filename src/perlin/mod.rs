@@ -149,7 +149,7 @@ impl Perlin {
             }
         }
 
-        self.image.save("image.png");
+        self.image.save("result.png");
     }
 }
 
