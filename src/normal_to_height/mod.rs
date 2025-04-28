@@ -89,6 +89,13 @@ impl NormalToHeight {
                 let right = self.get_direction(x, y, Direction::Right);
 
                 dbg!(down, up, left, right);
+
+                let up_left = self.get_diagonal(x, y, Diagonal::UpLeft);
+                let up_right = self.get_diagonal(x, y, Diagonal::UpRight);
+                let down_left = self.get_diagonal(x, y, Diagonal::DownLeft);
+                let down_right = self.get_diagonal(x, y, Diagonal::DownRight);
+
+                dbg!(up_left, up_right, down_left, down_right);
                 break;
             }
             break;
